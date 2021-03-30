@@ -27,12 +27,14 @@ body{
     width: 327px;
     border-radius: 10px;
 
+    overflow: hidden;
     background-color: white;
 }
 
 .cabecalho{
     height: 100px;
     background-image: url("/images/bg-pattern-card.svg");
+    
 
     position: relative;
     display: flex;
