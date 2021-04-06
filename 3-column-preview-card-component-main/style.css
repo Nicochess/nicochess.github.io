@@ -10,15 +10,20 @@
 body{
     width: 100vw;
     height: 100%;
+    padding: 1rem; 
 
+    font-size: 15px;
+}
+
+main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
-    padding: 1rem 0; 
-
-    font-size: 15px;
+footer{
+    padding: 1rem;
 }
 
 .card{
