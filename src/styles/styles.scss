@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "8-Bit Arcade In";
+    src: url("../font/8-bit-arcade-in.ttf");
+}
+
+@font-face {
+    font-family: "8-Bit Arcade Out";
+    src: url("../font/8-bit-arcade-out.ttf");
+}
+
+@font-face {
+    font-family: "Bit Font";
+    src: url("../font/vcr-mono-osd.ttf");
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url("../assets/8-IHO2QO2.png") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    font-family: "Bit Font";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 600px;
+}
+
+.title {
+    font-size: 70px;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 1px black;
+    color: white;
+    filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+    animation: float 6s ease-in infinite;
+    position: relative;
+
+    &::before {
+        content: "Front end Developer";
+        position: absolute;
+        bottom: -20px;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__item {
+        font-family: "Bit Font";
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px;
+        border: 2px solid rgb(90, 90, 90);
+        background-color: gray;
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        letter-spacing: 4px;
+        border-radius: 0;
+        filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+    }
+}
+
+@keyframes float {
+	0% {
+        filter: drop-shadow(0 5px 15px 0px rgba(0,0,0,0.6));
+		transform: translatey(0px);
+	}
+	50% {
+        filter: drop-shadow(0 25px 15px 0px rgba(0,0,0,0.2));
+		transform: translatey(-20px);
+	}
+	100% {
+        filter: drop-shadow(0 5px 15px 0px rgba(0,0,0,0.6));
+		transform: translatey(0px);
+	}
+}
