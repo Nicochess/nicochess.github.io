@@ -35,7 +35,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: url("../assets/8-IHO2QO2.png") no-repeat;
+  background: url("../assets/1-sunrise.png") no-repeat;
   background-size: cover;
   background-position: bottom;
   font-family: "Bit Font";
@@ -82,22 +82,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .menu__item {
   font-family: "Bit Font";
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
   padding: 10px;
-  border: 2px solid #5a5a5a;
-  background-color: gray;
+  border: 2px solid #444444;
+  background-color: #888888;
   text-shadow: 2px 2px 1px black;
-  color: white;
+  color: #FFFFFF;
   letter-spacing: 4px;
   border-radius: 0;
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
           filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+  cursor: pointer;
 }
 
 @-webkit-keyframes float {
