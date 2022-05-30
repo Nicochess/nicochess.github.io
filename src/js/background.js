@@ -51,7 +51,18 @@ switch (timeNow) {
   case 23:
   case 24:
     document.body.style.backgroundImage = "url(./src/assets/11-night.png)";
+    document.body.style.backgroundPosition = "top";
     break;
   default:
     break;
+}
+
+if (timeNow < 6) {
+  document.body.style.backgroundPosition = "right";
+} else if (timeNow < 12) {
+  document.body.style.backgroundPosition = "left";
+} else if (timeNow < 19){
+  document.body.style.backgroundPosition = "right";
+} else if (timeNow < 23){
+  document.body.style.backgroundPosition = "left";
 }
