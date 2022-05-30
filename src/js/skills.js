@@ -35,7 +35,7 @@ export const skills = () => {
     <div class="menu__item">
       <img src="./src/assets/figma.png" alt="Figma Icon">
     </div>
-    <button class="menu__item back">Voltar</button>
+    <button class="menu__item back">Back</button>
       `;
 
       back()
