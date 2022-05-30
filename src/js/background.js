@@ -56,19 +56,3 @@ switch (timeNow) {
     break;
 }
 
-// Change the icon based on day enlightment
-function setFavicons() {
-  let head = document.querySelector("head");
-  let setFavicon = document.createElement("link");
-  setFavicon.setAttribute("rel", "shortcut icon");
-
-  if (timeNow > 18) {
-    setFavicon.setAttribute("href", "./src/assets/moon.png");
-    head.appendChild(setFavicon);
-    return;
-  }
-
-  setFavicon.setAttribute("href", "./src/assets/sunny.png");
-  head.appendChild(setFavicon);
-}
-setFavicons();

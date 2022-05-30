@@ -1,14 +1,4 @@
 @font-face {
-    font-family: "8-Bit Arcade In";
-    src: url("../font/8-bit-arcade-in.ttf");
-}
-
-@font-face {
-    font-family: "8-Bit Arcade Out";
-    src: url("../font/8-bit-arcade-out.ttf");
-}
-
-@font-face {
     font-family: "Bit Font";
     src: url("../font/vcr-mono-osd.ttf");
 }
@@ -37,6 +27,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 60px;
     max-width: 600px;
 }
@@ -64,7 +55,32 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     gap: 15px;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+
+        .menu__item {
+            width: 100%;
+            height: 100%;
+            max-height: 102px;
+            cursor: default;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .back {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            cursor: pointer;
+        }
+    }
 
     &__item {
         width: 90%;
