@@ -1,6 +1,7 @@
-const playAudio = (path, vol = 0.1) => {
+export const playAudio = (path, vol = 0.1, loop = false) => {
   const sound = new Audio(path);
   sound.volume = vol;
+  sound.loop = loop
   sound.play();
 };
 
