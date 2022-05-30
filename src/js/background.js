@@ -27,6 +27,7 @@ switch (timeNow) {
   case 12:
   case 13:
     document.body.style.backgroundImage = modalStart.style.backgroundImage = "url(./src/assets/5-halfday.png)";
+    document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "top";
     break;
   case 14:
   case 15:
@@ -50,21 +51,8 @@ switch (timeNow) {
   case 23:
   case 24:
     document.body.style.backgroundImage = modalStart.style.backgroundImage = "url(./src/assets/11-night.png)";
+    document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "top";
     break;
   default:
     break;
-}
-
-if (timeNow < 6) {
-  document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "right";
-} else if (timeNow < 12) {
-  document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "left";
-} else if (timeNow < 14){
-  document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "top";
-} else if (timeNow < 19){
-  document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "right";
-} else if (timeNow < 23){
-  document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "left";
-} else {
-  document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "top";
 }
