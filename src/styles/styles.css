@@ -111,6 +111,60 @@ body {
   gap: 15px;
 }
 
+.menu .github {
+  position: relative;
+}
+
+.menu .github::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  width: 40px;
+  height: 38px;
+  background-image: url("../assets/github.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.menu .linkedin {
+  position: relative;
+}
+
+.menu .linkedin::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  width: 40px;
+  height: 38px;
+  background-image: url("../assets/linkedin.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.menu .email {
+  position: relative;
+}
+
+.menu .email::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  width: 40px;
+  height: 42px;
+  background-image: url("../assets/email.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .menu .back {
   position: relative;
 }
@@ -120,8 +174,8 @@ body {
   position: absolute;
   top: 50%;
   left: 25px;
-  width: 30px;
-  height: 32px;
+  width: 35px;
+  height: 34px;
   background-image: url("../assets/arrow.png");
   background-repeat: no-repeat;
   background-size: contain;

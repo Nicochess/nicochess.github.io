@@ -9,17 +9,21 @@ switch (timeNow) {
   case 4:
   case 5:
     document.body.style.backgroundImage = modalStart.style.backgroundImage = "url(./src/assets/12-dawn.png)";
+    document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "right";
     break;
   case 6:
     document.body.style.backgroundImage = modalStart.style.backgroundImage = "url(./src/assets/1-sunrise.png)";
+    document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "left";
     break;
   case 7:
     document.body.style.backgroundImage = modalStart.style.backgroundImage = "url(./src/assets/2-sunrise.png)";
+    document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "left";
     break;
   case 8:
   case 9:
   case 10:
     document.body.style.backgroundImage = modalStart.style.backgroundImage = "url(./src/assets/3-morning.png)";
+    document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "left";
     break;
   case 11:
     document.body.style.backgroundImage = modalStart.style.backgroundImage = "url(./src/assets/4-morning.png)";
@@ -35,18 +39,22 @@ switch (timeNow) {
     break;
   case 16:
     document.body.style.backgroundImage = modalStart.style.backgroundImage = "url(./src/assets/7-afternoon.png)";
+    document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "right";
     break;
   case 17:
     document.body.style.backgroundImage = modalStart.style.backgroundImage = "url(./src/assets/8-sunset.png)";
+    document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "right";
     break;
   case 18:
     document.body.style.backgroundImage = modalStart.style.backgroundImage = "url(./src/assets/9-sunset.png)";
+    document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "right";
     break;
   case 19:
   case 20:
   case 21:
   case 22:
     document.body.style.backgroundImage = modalStart.style.backgroundImage = "url(./src/assets/10-night.png)";
+    document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "left";
     break;
   case 23:
   case 24:
