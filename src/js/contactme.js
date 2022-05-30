@@ -1,4 +1,5 @@
 import { back } from "./back.js";
+import { soundEffect } from "./soundEffect.js";
 
 export const contactme = () => {
   const button = document.querySelector(".contactme");
@@ -12,6 +13,7 @@ export const contactme = () => {
       <button class="menu__item back">Back</button>
       `;
 
+    soundEffect()
     back();
   });
 };

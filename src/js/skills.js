@@ -1,4 +1,5 @@
 import { back } from "./back.js";
+import { soundEffect } from "./soundEffect.js";
 
 export const skills = () => {
   const button = document.querySelector(".skills");
@@ -38,6 +39,7 @@ export const skills = () => {
     <button class="menu__item back">Back</button>
       `;
 
+      soundEffect()
       back()
   });
 };
