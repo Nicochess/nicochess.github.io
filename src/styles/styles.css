@@ -13,6 +13,7 @@
 }
 
 body {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,10 +26,34 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: url("../assets/1-sunrise.png") no-repeat;
   background-size: cover;
   background-position: bottom;
   font-family: "Bit Font";
+}
+
+.modal-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+
+.modal-start img {
+  width: 20vw;
+  cursor: pointer;
+  -webkit-animation: float 6s infinite;
+          animation: float 6s infinite;
 }
 
 .container {

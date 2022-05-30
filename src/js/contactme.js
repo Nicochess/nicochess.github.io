@@ -17,5 +17,3 @@ export const contactme = () => {
     back();
   });
 };
-
-contactme();
