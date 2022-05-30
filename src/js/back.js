@@ -1,3 +1,4 @@
+import { aboutme } from "./aboutme.js";
 import { contactme } from "./contactme.js";
 import { skills } from "./skills.js";
 import { soundEffect } from "./soundEffect.js";
@@ -18,5 +19,6 @@ export const back = () => {
       soundEffect()
       contactme()
       skills()
+      aboutme()
   });
 };

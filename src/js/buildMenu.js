@@ -1,3 +1,4 @@
+import { aboutme } from "./aboutme.js";
 import { backgroundMusic } from "./backgroundMusic.js";
 import { contactme } from "./contactme.js";
 import { skills } from "./skills.js";
@@ -23,6 +24,7 @@ export const buildMenu = () => {
   container.appendChild(title);
   container.appendChild(menu);
 
+  aboutme()
   contactme()
   skills()
   soundEffect()
