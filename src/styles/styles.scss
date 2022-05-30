@@ -58,9 +58,27 @@ body {
     width: 100%;
     gap: 15px;
 
+    .back {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 25px;
+            width: 30px;
+            height: 32px;
+            background-image: url("../assets/arrow.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform: rotate(270deg) translateX(50%);
+        }
+    }
+
     &__grid {
         display: grid;
+        justify-content: center;
         grid-template-columns: repeat(3, 100px);
+        gap: 10px;
 
         .menu__item {
             width: 100%;

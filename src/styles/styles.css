@@ -82,11 +82,33 @@ body {
   gap: 15px;
 }
 
+.menu .back {
+  position: relative;
+}
+
+.menu .back::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  width: 30px;
+  height: 32px;
+  background-image: url("../assets/arrow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: rotate(270deg) translateX(50%);
+          transform: rotate(270deg) translateX(50%);
+}
+
 .menu__grid {
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-grid-columns: (100px)[3];
       grid-template-columns: repeat(3, 100px);
+  gap: 10px;
 }
 
 .menu__grid .menu__item {
