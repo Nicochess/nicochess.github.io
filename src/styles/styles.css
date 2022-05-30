@@ -50,7 +50,7 @@ body {
 }
 
 .modal-start img {
-  width: 20vw;
+  width: 230px;
   cursor: pointer;
   -webkit-animation: float 6s infinite;
           animation: float 6s infinite;
