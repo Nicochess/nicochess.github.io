@@ -14,9 +14,9 @@ switch (timeNow) {
     document.body.style.backgroundImage = "url(./src/assets/1-sunrise.png)";
     break;
   case 7:
-  case 8:
     document.body.style.backgroundImage = "url(./src/assets/2-sunrise.png)";
     break;
+  case 8:
   case 9:
   case 10:
     document.body.style.backgroundImage = "url(./src/assets/3-morning.png)";
@@ -55,4 +55,3 @@ switch (timeNow) {
   default:
     break;
 }
-
