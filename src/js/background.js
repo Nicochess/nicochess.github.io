@@ -3,9 +3,6 @@ const modalStart = document.querySelector('.modal-start')
 
 //Change the background based on the day time
 switch (timeNow) {
-  case 0:
-  case 1:
-  case 2:
   case 3:
   case 4:
   case 5:
@@ -59,6 +56,9 @@ switch (timeNow) {
     break;
   case 23:
   case 24:
+  case 0:
+  case 1:
+  case 2:
     document.body.style.backgroundImage = modalStart.style.backgroundImage = "url(./src/assets/11-night.png)";
     document.body.style.backgroundPosition = modalStart.style.backgroundPosition = "top";
     break;
