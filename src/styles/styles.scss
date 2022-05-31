@@ -177,3 +177,9 @@ body {
 		transform: translatey(0px);
 	}
 }
+
+@media screen and (max-width: 375px) {
+    .title {
+        font-size: 3em;
+    }
+}
