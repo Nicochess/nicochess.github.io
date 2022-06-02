@@ -142,8 +142,8 @@ body {
   font-size: 16px;
   text-align: center;
   padding: 15px;
-  border-top: 3px solid #444444;
-  border-bottom: 3px solid #444444;
+  border-top: 4px solid #444444;
+  border-bottom: 4px solid #444444;
   background-color: #888888;
   text-shadow: 2px 2px 1px black;
   text-decoration: none;
@@ -158,8 +158,8 @@ body {
 .menu__item::before {
   content: "";
   display: block;
-  border-right: 3px solid #444444;
-  border-left: 3px solid #444444;
+  border-right: 4px solid #444444;
+  border-left: 4px solid #444444;
   background: #888888;
   position: absolute;
   top: 4px;
