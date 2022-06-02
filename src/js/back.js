@@ -4,7 +4,7 @@ import { skills } from "./skills.js";
 import { soundEffect } from "./soundEffect.js";
 
 export const back = () => {
-  const button = document.querySelector(".back");
+  const button = document.querySelector(".home");
   const menuContainer = document.querySelector(".menu");
 
   button.addEventListener("click", () => {

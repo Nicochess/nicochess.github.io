@@ -9,9 +9,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 0;
 }
 
-body, .modal-start {
+body,
+.modal-start {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,56 +77,83 @@ body {
     width: 100%;
     gap: 15px;
 
-    .github, .email,
-    .linkedin, .back {
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 25px;
-            width: 40px;
-            height: 38px;
-            background-repeat: no-repeat;
-            background-size: contain;
-            transform: translateY(-50%);
-        }
+    .github,
+    .email,
+    .linkedin,
+    .back {
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        width: 40px;
+        height: 38px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: translateY(-50%);
     }
 
-    .github::before {
+    .github {
         background-image: url("../assets/github.png");
     }
 
-    .linkedin::before {
+    .linkedin {
         background-image: url("../assets/linkedin.png");
     }
 
-    .email::before {
+    .email {
         background-image: url("../assets/email.png");
     }
 
-    .back::before {
+    .back {
         background-image: url("../assets/arrow.png");
         transform: rotate(270deg) translateX(50%);
     }
 
     &__item {
+        position: relative;
         width: 90%;
         font-family: "Bit Font";
         font-size: 16px;
         text-align: center;
         padding: 15px;
-        border: 2px solid #444444;
+        border-top: 3px solid #444444;
+        border-bottom: 3px solid #444444;
         background-color: #888888;
         text-shadow: 2px 2px 1px black;
         text-decoration: none;
-        color: #FFFFFF;
-        letter-spacing: 4px;
+        color: #ffffff;
+        letter-spacing: 1px;
         border-radius: 0;
         filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
         cursor: pointer;
-    
+
+        &::before {
+            content: "";
+            display: block;
+            border-right: 3px solid #444444;
+            border-left: 3px solid #444444;
+            background: #888888;
+            position: absolute;
+            top: 4px;
+            right: -7px;
+            left: -7px;
+            bottom: 4px;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            border-left: 4px solid #444444;
+            border-right: 4px solid #444444;
+            background: #888888;
+            position: absolute;
+            top: 0px;
+            right: -4px;
+            left: -4px;
+            bottom: 0px;
+            z-index: -2;
+        }
+
         &:hover {
             transform: scale(1.03);
         }
@@ -141,7 +170,7 @@ body {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 100px);
-    gap: 10px;
+    gap: 10px 20px;
 
     .menu__item {
         width: 100%;
@@ -155,7 +184,7 @@ body {
         object-fit: contain;
     }
 
-    .back {
+    .home {
         height: auto;
         grid-column-start: 1;
         grid-column-end: 4;
@@ -164,22 +193,32 @@ body {
 }
 
 @keyframes float {
-	0% {
-        filter: drop-shadow(0 5px 15px 0px rgba(0,0,0,0.6));
-		transform: translatey(0px);
-	}
-	50% {
-        filter: drop-shadow(0 25px 15px 0px rgba(0,0,0,0.2));
-		transform: translatey(-20px);
-	}
-	100% {
-        filter: drop-shadow(0 5px 15px 0px rgba(0,0,0,0.6));
-		transform: translatey(0px);
-	}
+    0% {
+        filter: drop-shadow(0 5px 15px 0px rgba(0, 0, 0, 0.6));
+        transform: translatey(0px);
+    }
+
+    50% {
+        filter: drop-shadow(0 25px 15px 0px rgba(0, 0, 0, 0.2));
+        transform: translatey(-20px);
+    }
+
+    100% {
+        filter: drop-shadow(0 5px 15px 0px rgba(0, 0, 0, 0.6));
+        transform: translatey(0px);
+    }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
     .title {
         font-size: 3em;
+    }
+
+    .menu__grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        .menu__item:not(.home) {
+            height: 80px;
+        }
     }
 }

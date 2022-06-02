@@ -10,7 +10,7 @@ export const soundEffect = () => {
 
   buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
-      const backButton = e.target.classList.value.includes("back");
+      const backButton = e.target.classList.value.includes("home");
       if (backButton) {
         playAudio("./src/assets/backsound.wav");
         return;

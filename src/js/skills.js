@@ -36,7 +36,10 @@ export const skills = () => {
     <div class="menu__item">
       <img src="./src/assets/figma.png" loading="eager" alt="Figma Icon">
     </div>
-    <button class="menu__item back">Back</button>
+    <button class="menu__item home">
+      <span class="back"></span>
+      Back
+    </button>
       `;
 
       soundEffect()

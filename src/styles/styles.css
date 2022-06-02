@@ -10,9 +10,11 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  border: 0;
 }
 
-body, .modal-start {
+body,
+.modal-start {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,14 +102,10 @@ body {
   gap: 15px;
 }
 
-.menu .github, .menu .email,
-.menu .linkedin, .menu .back {
-  position: relative;
-}
-
-.menu .github::before, .menu .email::before,
-.menu .linkedin::before, .menu .back::before {
-  content: '';
+.menu .github,
+.menu .email,
+.menu .linkedin,
+.menu .back {
   position: absolute;
   top: 50%;
   left: 25px;
@@ -119,40 +117,70 @@ body {
           transform: translateY(-50%);
 }
 
-.menu .github::before {
+.menu .github {
   background-image: url("../assets/github.png");
 }
 
-.menu .linkedin::before {
+.menu .linkedin {
   background-image: url("../assets/linkedin.png");
 }
 
-.menu .email::before {
+.menu .email {
   background-image: url("../assets/email.png");
 }
 
-.menu .back::before {
+.menu .back {
   background-image: url("../assets/arrow.png");
   -webkit-transform: rotate(270deg) translateX(50%);
           transform: rotate(270deg) translateX(50%);
 }
 
 .menu__item {
+  position: relative;
   width: 90%;
   font-family: "Bit Font";
   font-size: 16px;
   text-align: center;
   padding: 15px;
-  border: 2px solid #444444;
+  border-top: 3px solid #444444;
+  border-bottom: 3px solid #444444;
   background-color: #888888;
   text-shadow: 2px 2px 1px black;
   text-decoration: none;
-  color: #FFFFFF;
-  letter-spacing: 4px;
+  color: #ffffff;
+  letter-spacing: 1px;
   border-radius: 0;
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
           filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
   cursor: pointer;
+}
+
+.menu__item::before {
+  content: "";
+  display: block;
+  border-right: 3px solid #444444;
+  border-left: 3px solid #444444;
+  background: #888888;
+  position: absolute;
+  top: 4px;
+  right: -7px;
+  left: -7px;
+  bottom: 4px;
+  z-index: -1;
+}
+
+.menu__item::after {
+  content: "";
+  display: block;
+  border-left: 4px solid #444444;
+  border-right: 4px solid #444444;
+  background: #888888;
+  position: absolute;
+  top: 0px;
+  right: -4px;
+  left: -4px;
+  bottom: 0px;
+  z-index: -2;
 }
 
 .menu__item:hover {
@@ -174,7 +202,7 @@ body {
           justify-content: center;
   -ms-grid-columns: (100px)[3];
       grid-template-columns: repeat(3, 100px);
-  gap: 10px;
+  gap: 10px 20px;
 }
 
 .menu__grid .menu__item {
@@ -190,7 +218,7 @@ body {
      object-fit: contain;
 }
 
-.menu__grid .back {
+.menu__grid .home {
   height: auto;
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -240,9 +268,16 @@ body {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
   .title {
     font-size: 3em;
+  }
+  .menu__grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .menu__grid .menu__item:not(.home) {
+    height: 80px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

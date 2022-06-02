@@ -17,7 +17,10 @@ export const aboutme = () => {
         About the seconds? I like to laugh at the most cringe things on the internet. 
         Nice to meet you, Anonymous!
       </div>
-      <button class="menu__item back">Back</button>
+      <button class="menu__item home">
+        <span class="back"></span>
+        Back
+      </button>
       `;
 
     soundEffect()
