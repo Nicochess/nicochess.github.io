@@ -105,6 +105,7 @@ body {
 .menu .github,
 .menu .email,
 .menu .linkedin,
+.menu .discord,
 .menu .back {
   position: absolute;
   top: 50%;
@@ -127,6 +128,10 @@ body {
 
 .menu .email {
   background-image: url("../assets/email.png");
+}
+
+.menu .discord {
+  background-image: url("../assets/discord.webp");
 }
 
 .menu .back {

@@ -19,6 +19,10 @@ export const contactme = () => {
         <span class="email"></span>
         Email
       </a>
+      <button class="menu__item" target="_blank">
+        <span class="discord"></span>
+        Nicochess#6374
+      </button>
       <button class="menu__item home">
         <span class="back"></span>
         Back
